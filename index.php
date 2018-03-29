@@ -33,8 +33,8 @@
     var name = prompt('输入用户名','');
     console.log(name);
     if(name === 'null' || name === '')location.reload(true);
-    var wsUrl = 'wss://zhangshaofeng.top/wss';
-    var wsUrl = 'ws://127.0.0.1:8080';
+    //var wsUrl = 'wss://zhangshaofeng.top/wss';
+    var wsUrl = 'ws://127.0.0.1:8008';
     var ws = new WebSocket(wsUrl);
     ws.onopen = function () {
         console.log('连接成功');
