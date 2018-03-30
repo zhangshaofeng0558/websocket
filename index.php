@@ -60,7 +60,7 @@
                     $('.users').append(item);
                 })
             })
-            console.log('用户登录');
+            //console.log('用户登录');
         }else if(type ===1){
             var $selector = $('.chats');
             var newListItem ="<div style=\"text-align:left\">"+ msg.text+"</div>";
@@ -92,16 +92,16 @@
 
     //心跳检测
     var heartCheck = {
-        timeout: 60000,//60s
+        timeout: 40000,
         timeoutObj: null,
         serverTimeoutObj: null,
         reset: function(){
-            console.log('heart reset');
             clearTimeout(this.timeoutObj);
             clearTimeout(this.serverTimeoutObj);
             return this;
         },
         start: function(){
+            console.log('heart start');
             var self = this;
             this.timeoutObj = setTimeout(function(){
                 //这里发送一个心跳，后端收到后，返回一个心跳消息，
