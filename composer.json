@@ -1,0 +1,22 @@
+{
+    "name": "zhangshaofeng0558/websocket", 
+    "type": "library",
+    "description": "websocket即时通讯",
+    "keywords": ["websocket"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "zhangshaofeng0558",
+            "email": "zhangshaofeng0558@163.com",
+            "homepage": "https://github.com/zhangshaofeng0558"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "zhangshaofeng0558\\websocket\\": "src/"
+        }
+    },
+    "require": {
+    },
+    "minimum-stability": "dev"
+}
